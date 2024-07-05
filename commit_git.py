@@ -15,7 +15,8 @@ def commit_changes():
         subprocess.run(['git', 'add', '.'], check=True)
         
         # Commit the changes with a commit message
-        subprocess.run(['git', 'commit', '-m', 'add new website na'], check=True)
+        subprocess.run(['git', 'commit', '-m', 'add new website na'], check=True)       
+        subprocess.run(['git', 'pull', 'origin', 'main'], check=True)
         subprocess.run(['git', 'push', 'origin', 'main'], check=True)
 
         print('Changes committed successfully.')
