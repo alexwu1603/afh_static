@@ -1,0 +1,11 @@
+2024-08-13 15:00:21,975 ERROR Error fetching movie data: Traceback (most recent call last):
+  File "/var/src/web/afh/job/afh_kkphim_url.py", line 61, in update_kk_phim
+    movieData = requests.get(detailUrl).json()
+  File "/usr/local/lib/python3.8/dist-packages/requests/models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 518, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3/dist-packages/simplejson/decoder.py", line 373, in decode
+    raise JSONDecodeError("Extra data", s, end, len(s))
+simplejson.errors.JSONDecodeError: Extra data: line 1 column 31 - line 1 column 107 (char 30 - 106)
+
